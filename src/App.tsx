@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import { identity, printValue } from "./common/senior/part1";
-
+import { invokeCallback } from "./common/senior/part4";
 function App() {
   const item: number = 1;
   useEffect(() => {
-    console.log(identity(20, "邓超"));
+    invokeCallback(1);
   }, []);
   return <div className="App"></div>;
 }
