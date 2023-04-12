@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { invokeCallback } from "./common/senior/part4";
+import { userId } from "./common/senior/part10";
 function App() {
   const item: number = 1;
   useEffect(() => {
-    invokeCallback(1);
+    console.log(userId);
   }, []);
   return <div className="App"></div>;
 }
